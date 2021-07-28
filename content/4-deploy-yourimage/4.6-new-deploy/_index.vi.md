@@ -28,8 +28,6 @@ Trong bước này, chúng ta sẽ tiến hành deploy container image lên Ligh
   + Click vào Public domain để tiến hành truy cập tới dịch vụ đang chạy trong container của bạn. 
 ![Lightsail](/images/container/036.png?width=90pc)
 
-6. Trang web mặc định của nginx đã được thay bằng dòng chữ **"Welcome to Amazonlightsail Container workshop"**. Chúc mừng bạn đã hoàn tất bài lab Lightsail container.
-![Lightsail](/images/container/037.png?width=50pc)
-
+6. Trang web mặc định của nginx đã được thay bằng dòng chữ **"Welcome to Amazon Lightsail Container workshop"**. Chúc mừng bạn đã hoàn tất bài lab Lightsail container.
 
 7. Sau khi hoàn tất bạn hãy thực hiện dọn dẹp tài nguyên để tránh phát sinh chi phí ngoài mong muốn nhé.

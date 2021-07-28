@@ -19,7 +19,7 @@ cd lightsail-workshop-nginx
 
 2. Chạy lệnh dưới đây để tạo file index.html
 ```
-echo "Welcome to Amazonlightsail Container workshop" > index.html
+echo "Welcome to Amazon Lightsail Container workshop" > index.html
 ```
 
 3. Chạy lệnh dưới đây để tạo Docker file.
