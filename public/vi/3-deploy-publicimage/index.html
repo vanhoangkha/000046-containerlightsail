@@ -12,21 +12,21 @@
     <title>Triển khai public image :: Lightsail Container</title>
 
     
-    <link href="/css/nucleus.css?1673155645" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1673155645" rel="stylesheet">
-    <link href="/css/hybrid.css?1673155645" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1673155645" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1673155645" rel="stylesheet">
-    <link href="/css/auto-complete.css?1673155645" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1673155645" rel="stylesheet">
-    <link href="/css/theme.css?1673155645" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1673155645" rel="stylesheet">
+    <link href="/css/nucleus.css?1673155907" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1673155907" rel="stylesheet">
+    <link href="/css/hybrid.css?1673155907" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1673155907" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1673155907" rel="stylesheet">
+    <link href="/css/auto-complete.css?1673155907" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1673155907" rel="stylesheet">
+    <link href="/css/theme.css?1673155907" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1673155907" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1673155645" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1673155907" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1673155645"></script>
+    <script src="/js/jquery-3.3.1.min.js?1673155907"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1673155645"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1673155645"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1673155907"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1673155907"></script>
 <script type="text/javascript">
     
         var baseurl = "\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1673155645"></script>
+<script type="text/javascript" src="/js/search.js?1673155907"></script>
 
     
   </div>
@@ -475,7 +475,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>07-09-2021</font></i>
+        <i><font color=orange>08-01-2023</font></i>
     </left>
     <left>
         <br>
@@ -572,13 +572,13 @@
 <ul>
 <li>Click <strong>Create your first deployment</strong>.</li>
 </ul>
-<p><img src="/images/container/005.png?width=90pc" alt="Lightsail"></p>
+<p><img src="/images/2/0001.png?featherlight=false&amp;width=90pc" alt="Lightsail"></p>
 <ol start="2">
 <li>Đặt caontainer name và image name <strong>nginx</strong>.
 Soure container image có thể đến từ một kho lưu trữ công khai, như Docker Hub hoặc là những container image mà bạn đã tạo và lưu trữ bằng dịch vụ container image repo của mình.
 Đối với bài lab này, chúng ta sẽ sử dụng container image docker Nginx chính thức do Nginx cung cấp. Docker Official Images là một tập hợp các kho lưu trữ Docker được tuyển chọn được lưu trữ trên Docker Hub đã được quét các lỗ hổng bảo mật và được duy trì bởi đội ngũ Docker.</li>
 </ol>
-<p><img src="/images/container/006.png?width=90pc" alt="Lightsail"></p>
+<p><img src="/images/2/0002.png?featherlight=false&amp;width=90pc" alt="Lightsail"></p>
 <ol start="3">
 <li>Bạn cũng có thể thêm các cấu hình tùy chọn như lệnh khởi chạy ban đầu, biến môi trường và các port mạng cho container. 
 Đối với bài lab này, bạn không cần chỉ định lệnh khởi chạy hoặc các biến môi trường, nhưng cần mở port để kết nối tới nginx server.
@@ -587,11 +587,11 @@ Chúng ta sẽ cấu hình Container Nginx lắng nghe trên cổng 80 cho lưu 
 <ul>
 <li>Click <strong>Add open ports</strong>.</li>
 </ul>
-<p><img src="/images/container/007.png?width=90pc" alt="Lightsail"></p>
+<p><img src="/images/2/0003.png?featherlight=false&amp;width=90pc" alt="Lightsail"></p>
 <ol start="4">
 <li>Điền thông tin port <strong>80</strong>. Protocol giữ nguyên <strong>HTTP</strong>.</li>
 </ol>
-<p><img src="/images/container/008.png?width=90pc" alt="Lightsail"></p>
+<p><img src="/images/2/0004.png?featherlight=false&amp;width=90pc" alt="Lightsail"></p>
 <ol start="5">
 <li>Để kiểm tra dịch vụ container đang hoạt động chính xác, chúng ta sẽ cần xác định public endpoint mà chúng ta có thể điều hướng đến trong trình duyệt web của mình.
 Chúng ta sẽ chỉ định nginx làm container và đảm nhận các traffic tới public endpoint qua cổng 80. Đường dẫn health check (/) sẽ để giá trị mặc định.</li>
@@ -599,19 +599,19 @@ Chúng ta sẽ chỉ định nginx làm container và đảm nhận các traffic
 <ul>
 <li>Click <strong>Save and deploy</strong>.</li>
 </ul>
-<p><img src="/images/container/009.png?width=90pc" alt="Lightsail"></p>
+<p><img src="/images/2/0005.png?featherlight=false&amp;width=90pc" alt="Lightsail"></p>
 <ol start="6">
 <li>Sẽ mất vài phút để quá trình deploy container hoàn tất và trạng thái chuyển từ <strong>Deploying</strong> sang <strong>Active</strong>.</li>
 </ol>
-<p><img src="/images/container/010.png?width=90pc" alt="Lightsail"></p>
+<p><img src="/images/2/0006.png?featherlight=false&amp;width=90pc" alt="Lightsail"></p>
 <ol start="7">
 <li>Kéo màn hình lên trên và click vào <strong>public domain</strong> của deployment để kết nối tới nginx container.</li>
 </ol>
-<p><img src="/images/container/011.png?width=90pc" alt="Lightsail"></p>
+<p><img src="/images/2/0007.png?featherlight=false&amp;width=90pc" alt="Lightsail"></p>
 <ol start="8">
 <li>Bạn sẽ kết nối tới server nginx đã được cài đặt trong container nginx của bạn. Bạn đã deploy container sử dụng public container image từ Docker Hub. Bước tiếp theo, chúng ta sẽ tự tạo container image và triển khai trên dịch vụ Lightsail container nhé.</li>
 </ol>
-<p><img src="/images/container/012.png?width=90pc" alt="Lightsail"></p>
+<p><img src="/images/2/0008.png?featherlight=false&amp;width=90pc" alt="Lightsail"></p>
 
 
 
@@ -854,19 +854,19 @@ Chúng ta sẽ chỉ định nginx làm container và đảm nhận các traffic
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1673155646"></script>
-    <script src="/js/perfect-scrollbar.min.js?1673155646"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1673155646"></script>
-    <script src="/js/jquery.sticky.js?1673155646"></script>
-    <script src="/js/featherlight.min.js?1673155646"></script>
-    <script src="/js/highlight.pack.js?1673155646"></script>
+    <script src="/js/clipboard.min.js?1673155907"></script>
+    <script src="/js/perfect-scrollbar.min.js?1673155907"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1673155907"></script>
+    <script src="/js/jquery.sticky.js?1673155907"></script>
+    <script src="/js/featherlight.min.js?1673155907"></script>
+    <script src="/js/highlight.pack.js?1673155907"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1673155646"></script>
-    <script src="/js/learn.js?1673155646"></script>
-    <script src="/js/hugo-learn.js?1673155646"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1673155907"></script>
+    <script src="/js/learn.js?1673155907"></script>
+    <script src="/js/hugo-learn.js?1673155907"></script>
 
-    <link href="/mermaid/mermaid.css?1673155646" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1673155646"></script>
+    <link href="/mermaid/mermaid.css?1673155907" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1673155907"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

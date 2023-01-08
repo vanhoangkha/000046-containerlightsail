@@ -1,33 +1,29 @@
 +++
-title = "Thực hiện Deploy mới"
+title = "Implement New Deploy"
 date = 2021
 weight = 6
 chapter = false
 pre = "<b>4.6 </b>"
 +++
 
-Trong bước này, chúng ta sẽ tiến hành deploy container image lên Lightsail container service của bạn.
+In this step, we will deploy the container image to your Lightsail container service.
 
 
-1. Truy cập vào [giao diện quản trị Lightsail container service của bạn] (https://lightsail.aws.amazon.com/ls/webapp/ap-southeast-1/container-services/lightsail-container/deployments)
+1. Go to your [Lightsail container service admin interface](https://lightsail.aws.amazon.com/ls/webapp/ap-southeast-1/container-services/lightsail-container/deployments)
   + Click **Deployments**.
-  + Click **Modify your deployment**.
-![Lightsail](/images/container/032.png?width=90pc)
+  + Click **Modify your deploy**
 
-2. Click **Choose stored image** để tiến hành lựa chọn container image bạn đã push.
-![Lightsail](/images/container/033.png?width=90pc)
+3. Select **":lightsail-container.nginx-container.hello.x"** container image.
+![Lightsail](/images/3/00029.png?featherlight=false&width=90pc)
 
-3. Lựa chọn **":lightsail-container.nginx-container.hello.x"** container image.
-![Lightsail](/images/container/034.png?width=90pc)
+4. Drag the screen to the bottom and click **Save and Deploy** to deploy.
+![Lightsail](/images/3/00030.png?featherlight=false&width=90pc)
 
-4. Kéo màn hình xuống dưới cùng và click **Save and Deploy** để tiến hành deploy.
-![Lightsail](/images/container/035.png?width=90pc)
+5. You will need to wait a few minutes for the deployment to complete.
+  + Drag the screen up and wait for the status to change to running.
+  + Click on Public domain to access the service running in your container.
+![Lightsail](/images/3/00031.png?featherlight=false&width=90pc)
 
-5. Bạn sẽ cần chờ vài phút để quá trình deploy hoàn tất.
-  + Kéo màn hình lên trên và chờ trạng thái chuyển sang running.
-  + Click vào Public domain để tiến hành truy cập tới dịch vụ đang chạy trong container của bạn. 
-![Lightsail](/images/container/036.png?width=90pc)
+6. The default nginx web page has been replaced with the text **"Welcome to Amazon Lightsail Container workshop"**. Congratulations on completing the Lightsail container lab.
 
-6. Trang web mặc định của nginx đã được thay bằng dòng chữ **"Welcome to Amazon Lightsail Container workshop"**. Chúc mừng bạn đã hoàn tất bài lab Lightsail container.
-
-7. Sau khi hoàn tất bạn hãy thực hiện dọn dẹp tài nguyên để tránh phát sinh chi phí ngoài mong muốn nhé.
+7. After you're done, clean up your resources to avoid unexpected costs.

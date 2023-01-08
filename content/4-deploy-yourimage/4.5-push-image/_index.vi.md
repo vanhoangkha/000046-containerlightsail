@@ -18,6 +18,7 @@ Sau khi push thành công, kết quả Lightsail sẽ trả về như dưới đ
 Image "nginx-container" registered.
 Refer to this image as ":lightsail-container.nginx-container.hello.1" in deployments.
 ```
+![Lightsail](/images/3/00025.png?featherlight=false&width=90pc)
 {{%notice tip%}}
 Nếu bạn chạy câu lệnh nhiều lần , push 1 image nhiều lần thì số đằng sau tên image sẽ tăng số thứ tự lên theo số lần bạn thực hiện push.
 {{%/notice%}}
@@ -26,6 +27,6 @@ Nếu bạn chạy câu lệnh nhiều lần , push 1 image nhiều lần thì s
   + Click tab **Images**.
   + Ở đây bạn có thể xem được các container image bạn đã push lên.
 
-![Lightsail](/images/container/031.png?width=90pc)
+![Lightsail](/images/3/00026.png?featherlight=false&width=90pc)
 
 3. Bước tiếp theo chúng ta sẽ thực hiện deploy mới sử dụng container image bạn vừa push lên.

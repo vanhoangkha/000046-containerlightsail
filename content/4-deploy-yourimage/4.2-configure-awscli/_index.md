@@ -1,39 +1,44 @@
 +++
-title = "Cấu hình AWS CLI"
+title = "AWS CLI Configuration"
 date = 2021
 weight = 2
 chapter = false
 pre = "<b>4.2 </b>"
 +++
 
-Trong bước này, chúng ta sẽ tạo IAM user access key và secret access key để sử dụng cấu hình cho AWS CLI.
+In this step, we will generate an IAM user access key and secret access key to use in configuration for the AWS CLI.
 
-1. Từ [giao diện của dịch vụ IAM](https://console.aws.amazon.com/iam/home#/home) click **Users**.
-![Lightsail](/images/container/019.png?width=90pc)
+1. From [IAM service interface](https://console.aws.amazon.com/iam/home#/home) click **Users**.
 
-2. Click **Add users*
+![Lightsail](/images/3/00010.png?featherlight=false&width=90pc)
 
-![Lightsail](/images/container/020.png?width=90pc)
+1. Click **Add users*
 
-3. Đặt tên user là **aws-cli**.
-  + Click chọn **Programmatic access**, user của chúng ta chỉ sử dụng cho AWS CLI nên không cần đăng nhập vào management console.
+![Lightsail](/images/3/00011.png?featherlight=false&width=90pc)
+
+2. Name the user **aws-cli**.
+  + Click **Programmatic access**, our user only uses it for AWS CLI, so there is no need to log in to the management console.
   + Click **Next: Permissions**.
 
-![Lightsail](/images/container/021.png?width=90pc)
+![Lightsail](/images/3/00012.png?featherlight=false&width=90pc)
 
-4. Click **Attach existing policies directly**.
-  + Click chọn **Administrator Access**.
+3. Click **Attach existing policies directly**.
+  + Click on **Administrator Access**.
   + Click **Next: Tags**.
 
-![Lightsail](/images/container/022.png?width=90pc)
+![Lightsail](/images/3/00013.png?featherlight=false&width=90pc)
 
-5. Click **Next: Review**. sau đó click **Create User**.
+4. Click **Next: Review**. then click **Create User**.
 
-6. Click **Download .csv** để download file csv chứa thông tin access và secret access key.
-![Lightsail](/images/container/023.png?width=90pc)
+5. Click **Download .csv** to download the csv file containing access information and secret access key.
 
-7. Quay lại Build Instance của chúng ta chạy lệnh **sudo aws configure** để tiến hành cấu hình CLI.
-  + Cấu hình thông tin Region và format như hình dưới. Lưu ý sử dụng access key và secret access key từ file csv bạn download về.
-![Lightsail](/images/container/024.png?width=60pc)
+![Lightsail](/images/3/00014.png?featherlight=false&width=90pc)
 
-8. Bước tiếp theo chúng ta sẽ cài đặt Docker để bắt đầu thực hiện build image.
+6. Back on our Build Instance run **sudo aws configure** command to proceed with CLI configuration.
+  + Configure Region and format information as shown below. Note to use the access key and secret access key from the csv file you downloaded.
+
+![Lightsail](/images/3/00015.png?featherlight=false&width=90pc)
+
+7. The next step is to install Docker to start building the image.
+
+![Lightsail](/images/3/00016.png?featherlight=false&width=90pc)

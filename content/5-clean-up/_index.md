@@ -1,5 +1,5 @@
 +++
-title = "Dọn dẹp tài nguyên  "
+title = "Clean up resources"
 date = 2021
 weight = 5
 chapter = false
@@ -7,28 +7,28 @@ pre = "<b>5. </b>"
 +++
 
 
-Chúng ta sẽ tiến hành xóa các tài nguyên theo thứ tự sau 
+We will proceed to delete the resources in the following order
 
-1. Truy cập vào [Giao diện dịch vụ Lightsail container ](https://lightsail.aws.amazon.com/ls/webapp/ap-southeast-1/container-services/lightsail-container/).
-  + Click biểu tượng 3 chấm.
+1. Go to [Lightsail container service interface ](https://lightsail.aws.amazon.com/ls/webapp/ap-southeast-1/container-services/lightsail-container/).
+  + Click the 3 dots icon.
   ![Lightsail](/images/container/038.png?width=90pc)
   + Click **Delete**
   + Click **Delete container service**.
   ![Lightsail](/images/container/039.png?width=90pc)
   + Click **Yes, delete**.
 
-2. Truy cập vào [giao diện quản trị của Lightsail](https://lightsail.aws.amazon.com/ls/webapp/home/instances/) 
-  + Click vào biểu tượng 3 dấu chấm của instance **Build-Instance**.
+2. Go to [Lightsail's admin interface](https://lightsail.aws.amazon.com/ls/webapp/home/instances/)
+  + Click on the 3-dot icon of the **Build-Instance** instance.
   + Click **Delete**.
-  ![Lightsail](/images/container/040.png?width=90pc)
+  ![Lightsail](/images/container/40.png?width=90pc)
   + Click **Yes, delete**.
 
 
-3.  Truy cập vào [giao diện quản trị của dịch vụ IAM](https://console.aws.amazon.com/iamv2/home#/users)
-  + Tại mục search , điền **aws-cli**.
-  + Click chọn user **aws-cli**.
+3. Go to [admin interface of IAM service](https://console.aws.amazon.com/iamv2/home#/users)
+  + In the search field, enter **aws-cli**.
+  + Click on user **aws-cli**.
   + Click **Delete**.
   ![Lightsail](/images/container/041.png?width=90pc)
-  + Điền **aws-cli** để xác nhận.
+  + Enter **aws-cli** to confirm.
   + Click **Delete**.
   ![Lightsail](/images/container/042.png?width=90pc)

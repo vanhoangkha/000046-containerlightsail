@@ -15,7 +15,7 @@ Container image của chúng ta vẫn sử dụng image nginx nhưng thay thế 
 mkdir lightsail-workshop-nginx
 cd lightsail-workshop-nginx
 ```
-![Lightsail](/images/container/028.png?width=60pc)
+![Lightsail](/images/3/00021.png?featherlight=false&width=90pc)
 
 2. Chạy lệnh dưới đây để tạo file index.html
 ```
@@ -27,19 +27,18 @@ echo "Welcome to Amazon Lightsail Container workshop" > index.html
 echo "FROM nginx:latest" > Dockerfile
 echo "COPY ./index.html /usr/share/nginx/html/index.html" >> Dockerfile
 ```
-
+![Lightsail](/images/3/00022.png?featherlight=false&width=90pc)
 4. Tiến hành build container image của chúng ta bằng cách chạy câu lệnh sau.
 ```
 sudo docker build -t nginx-container .
 ```
-![Lightsail](/images/container/029.png?width=60pc)
+![Lightsail](/images/3/00023.png?featherlight=false&width=90pc)
 
 5. Chạy lệnh sau để chạy thử container image chúng ta vừa build trên Build Instance và kiểm tra kết quả.
 ```
 sudo docker run -p 8080:80 nginx-container &
 curl localhost:8080
 ```
-
-![Lightsail](/images/container/030.png?width=60pc)
+![Lightsail](/images/3/00024.png?featherlight=false&width=90pc)
 
 6. Bước tiếp theo chúng ta sẽ thực hiện push container image chúng ta vừa tạo lên Lightsail, để chuẩn bị thực hiện deploy.
