@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.69.0" />
+    <meta name="generator" content="Hugo 0.99.1" />
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Cài đặt Docker cho Ubuntu :: Lightsail Container</title>
 
     
-    <link href="/css/nucleus.css?1631090752" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1631090752" rel="stylesheet">
-    <link href="/css/hybrid.css?1631090752" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1631090752" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1631090752" rel="stylesheet">
-    <link href="/css/auto-complete.css?1631090752" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1631090752" rel="stylesheet">
-    <link href="/css/theme.css?1631090752" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1631090752" rel="stylesheet">
+    <link href="/css/nucleus.css?1673155645" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1673155645" rel="stylesheet">
+    <link href="/css/hybrid.css?1673155645" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1673155645" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1673155645" rel="stylesheet">
+    <link href="/css/auto-complete.css?1673155645" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1673155645" rel="stylesheet">
+    <link href="/css/theme.css?1673155645" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1673155645" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1631090752" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1673155645" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1631090752"></script>
+    <script src="/js/jquery-3.3.1.min.js?1673155645"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1631090752"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1631090752"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1673155645"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1673155645"></script>
 <script type="text/javascript">
     
         var baseurl = "\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1631090752"></script>
+<script type="text/javascript" src="/js/search.js?1673155645"></script>
 
     
   </div>
@@ -248,7 +248,7 @@
   
     
     <li data-nav-id="/vi/4-deploy-yourimage/4.3-install-docker/" title="Cài đặt Docker cho Ubuntu" class="dd-item 
-        
+        parent
         active
         
         ">
@@ -568,23 +568,23 @@ Bạn có thể tham khảo thêm qui trình cài đặt <a href="https://docs.d
 <ol>
 <li>Chạy câu lệnh sau để cài đặt các gói cần thiết và thêm vào  GPG ( GNU Privacy Guard ) key để có thể sử dụng repository của Docker.</li>
 </ol>
-<pre><code>sudo apt-get install apt-transport-https ca-certificates curl gnupg lsb-release
+<pre tabindex="0"><code>sudo apt-get install apt-transport-https ca-certificates curl gnupg lsb-release
 sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 </code></pre><p><img src="/images/container/025.png?width=60pc" alt="Lightsail"></p>
 <ol start="2">
 <li>Chạy lệnh dưới đây để thêm Repo Docker.</li>
 </ol>
-<pre><code>echo &quot;deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable&quot; | sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null
+<pre tabindex="0"><code>echo &#34;deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable&#34; | sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null
 </code></pre><p><img src="/images/container/026.png?width=60pc" alt="Lightsail"></p>
 <ol start="3">
 <li>Tiến hành cài đặt Docker từ Repo bằng cách chạy câu lệnh dưới đây</li>
 </ol>
-<pre><code>sudo apt-get update
+<pre tabindex="0"><code>sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io -y
 </code></pre><ol start="4">
 <li>Kiểm tra cài đặt Docker bằng câu lệnh dưới.</li>
 </ol>
-<pre><code>sudo docker run hello-world
+<pre tabindex="0"><code>sudo docker run hello-world
 </code></pre><p><img src="/images/container/027.png?width=60pc" alt="Lightsail"></p>
 <ol start="5">
 <li>Bước tiếp theo chúng ta sẽ tiến hành build container image để tiến hành deploy.</li>
@@ -835,19 +835,19 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io -y
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1631090752"></script>
-    <script src="/js/perfect-scrollbar.min.js?1631090752"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1631090752"></script>
-    <script src="/js/jquery.sticky.js?1631090752"></script>
-    <script src="/js/featherlight.min.js?1631090752"></script>
-    <script src="/js/highlight.pack.js?1631090752"></script>
+    <script src="/js/clipboard.min.js?1673155646"></script>
+    <script src="/js/perfect-scrollbar.min.js?1673155646"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1673155646"></script>
+    <script src="/js/jquery.sticky.js?1673155646"></script>
+    <script src="/js/featherlight.min.js?1673155646"></script>
+    <script src="/js/highlight.pack.js?1673155646"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1631090752"></script>
-    <script src="/js/learn.js?1631090752"></script>
-    <script src="/js/hugo-learn.js?1631090752"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1673155646"></script>
+    <script src="/js/learn.js?1673155646"></script>
+    <script src="/js/hugo-learn.js?1673155646"></script>
 
-    <link href="/mermaid/mermaid.css?1631090752" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1631090752"></script>
+    <link href="/mermaid/mermaid.css?1673155646" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1673155646"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>/vi/</loc>
     <lastmod>1970-01-01T07:33:41+07:00</lastmod>
@@ -15,9 +14,7 @@
                 hreflang="vi"
                 href="/vi/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/vi/1-prepare/</loc>
     <lastmod>1970-01-01T07:33:41+07:00</lastmod>
     <xhtml:link
@@ -30,9 +27,7 @@
                 hreflang="vi"
                 href="/vi/1-prepare/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/vi/4-deploy-yourimage/4.1-create-lightsailinstance/</loc>
     <lastmod>1970-01-01T07:33:41+07:00</lastmod>
     <xhtml:link
@@ -45,9 +40,7 @@
                 hreflang="vi"
                 href="/vi/4-deploy-yourimage/4.1-create-lightsailinstance/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/vi/4-deploy-yourimage/4.2-configure-awscli/</loc>
     <lastmod>1970-01-01T07:33:41+07:00</lastmod>
     <xhtml:link
@@ -60,9 +53,7 @@
                 hreflang="vi"
                 href="/vi/4-deploy-yourimage/4.2-configure-awscli/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/vi/2-create-containerservice/</loc>
     <lastmod>1970-01-01T07:33:41+07:00</lastmod>
     <xhtml:link
@@ -75,9 +66,7 @@
                 hreflang="vi"
                 href="/vi/2-create-containerservice/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/vi/4-deploy-yourimage/4.3-install-docker/</loc>
     <lastmod>1970-01-01T07:33:41+07:00</lastmod>
     <xhtml:link
@@ -90,9 +79,7 @@
                 hreflang="vi"
                 href="/vi/4-deploy-yourimage/4.3-install-docker/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/vi/3-deploy-publicimage/</loc>
     <lastmod>1970-01-01T07:33:41+07:00</lastmod>
     <xhtml:link
@@ -105,9 +92,7 @@
                 hreflang="vi"
                 href="/vi/3-deploy-publicimage/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/vi/4-deploy-yourimage/4.4-build-image/</loc>
     <lastmod>1970-01-01T07:33:41+07:00</lastmod>
     <xhtml:link
@@ -120,9 +105,7 @@
                 hreflang="vi"
                 href="/vi/4-deploy-yourimage/4.4-build-image/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/vi/4-deploy-yourimage/</loc>
     <lastmod>1970-01-01T07:33:41+07:00</lastmod>
     <xhtml:link
@@ -135,9 +118,7 @@
                 hreflang="vi"
                 href="/vi/4-deploy-yourimage/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/vi/5-clean-up/</loc>
     <lastmod>1970-01-01T07:33:41+07:00</lastmod>
     <xhtml:link
@@ -150,9 +131,7 @@
                 hreflang="vi"
                 href="/vi/5-clean-up/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/vi/4-deploy-yourimage/4.5-push-image/</loc>
     <lastmod>1970-01-01T07:33:41+07:00</lastmod>
     <xhtml:link
@@ -165,9 +144,7 @@
                 hreflang="vi"
                 href="/vi/4-deploy-yourimage/4.5-push-image/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/vi/4-deploy-yourimage/4.6-new-deploy/</loc>
     <lastmod>1970-01-01T07:33:41+07:00</lastmod>
     <xhtml:link
@@ -180,9 +157,7 @@
                 hreflang="vi"
                 href="/vi/4-deploy-yourimage/4.6-new-deploy/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/vi/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -194,9 +169,7 @@
                 hreflang="vi"
                 href="/vi/categories/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/vi/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -209,5 +182,4 @@
                 href="/vi/tags/"
                 />
   </url>
-  
 </urlset>
