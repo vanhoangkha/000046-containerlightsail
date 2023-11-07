@@ -46,6 +46,6 @@ Docker provides a platform to develop and run applications within containerized 
 - **Management**: Guidance on pushing and managing container images in Lightsail container services.
 - **Source**: [Pushing and managing container images on Amazon Lightsail](https://lightsail.aws.amazon.com/ls/docs/en_us/articles/amazon-lightsail-pushing-and-managing-container-images)
 
-## Creating Container Images
+#### Creating Container Images
 - **Creation**: Steps on creating container images for Lightsail, including running a new container image and building a Dockerfile.
 - **Source**: [Creating container images for Amazon Lightsail container services](https://lightsail.aws.amazon.com/ls/docs/en_us/articles/amazon-lightsail-creating-container-images)
