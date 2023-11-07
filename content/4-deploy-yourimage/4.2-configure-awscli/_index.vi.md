@@ -1,44 +1,37 @@
-+++
-title = "Cấu hình AWS CLI"
-date = 2021
-weight = 2
-chapter = false
-pre = "<b>4.2 </b>"
-+++
+---
+title: "Hướng Dẫn Cấu Hình AWS CLI"
+date: 2021-01-01
+weight: 2
+chapter: false
+pre: "<b>4.2 </b>"
+---
 
-Trong bước này, chúng ta sẽ tạo IAM user access key và secret access key để sử dụng cấu hình cho AWS CLI.
+#### Bước Đầu Cấu Hình AWS CLI
 
-1. Từ [giao diện của dịch vụ IAM](https://console.aws.amazon.com/iam/home#/home) click **Users**.
+Amazon Web Services (AWS) là một nền tảng cung cấp dịch vụ đám mây đa năng và mạnh mẽ. Để quản lý các dịch vụ AWS một cách nhanh chóng thông qua Command Line Interface (CLI), bạn cần thiết lập AWS CLI bằng cách tạo các access keys cho IAM User. Sau đây là hướng dẫn từng bước để bạn có thể thực hiện quá trình này một cách thuận lợi.
 
-![Lightsail](/images/3/00010.png?featherlight=false&width=90pc)
+**Bước 1:** Đăng nhập vào AWS Management Console
+- Truy cập AWS Management Console tại link: [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/).
 
-1. Click **Add users*
+**Bước 2:** Chọn IAM User
+- Tại IAM console, truy cập vào "Users" trong navigation pane và click vào tên người dùng mà bạn muốn tạo access key.
 
-![Lightsail](/images/3/00011.png?featherlight=false&width=90pc)
+**Bước 3:** Tạo Access Key
+- Trên trang thông tin người dùng, đi đến tab "Security credentials" và trong phần "Access keys", click "Create access key".
 
-2. Đặt tên user là **aws-cli**.
-  + Click chọn **Programmatic access**, user của chúng ta chỉ sử dụng cho AWS CLI nên không cần đăng nhập vào management console.
-  + Click **Next: Permissions**.
+**Bước 4:** Thiết lập Access Key trong CLI
+- Trong quá trình cấu hình, chọn "Command Line Interface (CLI)".
 
-![Lightsail](/images/3/00012.png?featherlight=false&width=90pc)
+**Bước 5:** Nhập Tags (nếu cần)
+- Bạn có thể nhập tags cho access key nếu muốn và sau đó click "Next".
 
-3. Click **Attach existing policies directly**.
-  + Click chọn **Administrator Access**.
-  + Click **Next: Tags**.
+**Bước 6:** Tải File .csv
+- Click vào "Download .csv file" để tải về file chứa access key ID và secret access key.
 
-![Lightsail](/images/3/00013.png?featherlight=false&width=90pc)
+**Bước 7:** Hoàn thành tạo key
+- Sau khi file .csv đã được tải về, click "Done" để hoàn tất.
 
-4. Click **Next: Review**. sau đó click **Create User**.
+**Lưu ý quan trọng:** Access key là dữ liệu nhạy cảm và cần được bảo mật. Hãy lưu trữ file .csv cẩn thận và không chia sẻ cho những người không tin cậy.
 
-5. Click **Download .csv** để download file csv chứa thông tin access và secret access key.
+Theo các bước trên, việc tạo và cấu hình AWS CLI trở nên đơn giản, giúp bạn quản lý tài nguyên AWS một cách linh hoạt qua CLI.
 
-![Lightsail](/images/3/00014.png?featherlight=false&width=90pc)
-
-6. Quay lại Build Instance của chúng ta chạy lệnh **sudo aws configure** để tiến hành cấu hình CLI.
-  + Cấu hình thông tin Region và format như hình dưới. Lưu ý sử dụng access key và secret access key từ file csv bạn download về.
-
-![Lightsail](/images/3/00015.png?featherlight=false&width=90pc)
-
-7. Bước tiếp theo chúng ta sẽ cài đặt Docker để bắt đầu thực hiện build image.
-
-![Lightsail](/images/3/00016.png?featherlight=false&width=90pc)

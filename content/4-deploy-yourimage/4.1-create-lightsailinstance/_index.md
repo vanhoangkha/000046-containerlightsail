@@ -1,31 +1,35 @@
-+++
-title = "Create Lightsail instance"
-date = 2021
-weight = 1
-chapter = false
-pre = "<b>4.1 </b>"
-+++
+---
+title: "Creating a Lightsail Instance"
+date: 2021
+weight: 1
+chapter: false
+pre: "<b>4.1 </b>"
+---
 
-In this step, we will create the Lightsail Instance.
+#### Creating a Lightsail Instance
 
-1. From the [Lightsail admin interface](https://lightsail.aws.amazon.com/ls/webapp/home/) click **Create Instance**.
-![Lightsail](/images/3/0001.png?featherlight=false&width=90pc)
-2. Click the **Linux/Unix** platform. Under Blueprint, click **OS Only*, then select **Ubuntu Linux 20.04 LTS**.
+In this step, we will create a Lightsail instance.
 
-![Lightsail](/images/3/0002.png?featherlight=false&width=90pc)
+1. From the [Lightsail management console](https://lightsail.aws.amazon.com/ls/webapp/home/), click on **Create Instance**.
 
-3. Scroll down, under **Identify your instance**, name our instance **Build-Instance**.
+   ![Lightsail Create Instance](/images/3/0001.png?featherlight=false&width=90pc)
 
-![Lightsail](/images/3/0003.png?featherlight=false&width=90pc)
+2. Choose the **Linux/Unix** platform. In the Blueprint section, click on **OS Only**, and then select **Ubuntu Linux 20.04 LTS**.
 
-4. Drag the screen down, click **Create Instance**.
+   ![Select Blueprint](/images/3/0002.png?featherlight=false&width=90pc)
 
-![Lightsail](/images/3/0003.png?featherlight=false&width=90pc)
+3. Scroll down to the **Identify your instance** section, and name your instance **Build-Instance**.
 
-5. Wait a few minutes for the Lightsail instance to switch to the running state as shown below.
- + Click on the command line icon to connect to Build-Instance.
+   ![Name Instance](/images/3/0003.png?featherlight=false&width=90pc)
 
-![Lightsail](/images/3/0004.png?featherlight=false&width=90pc)
+4. Continue scrolling down and click on **Create Instance**.
+
+   ![Create Instance](/images/3/0003.png?featherlight=false&width=90pc)
+
+5. Wait a few minutes for the instance to change to the running state as shown below.
+    - Click on the command line icon to connect to the Build-Instance.
+
+   ![Instance Running](/images/3/0004.png?featherlight=false&width=90pc)
 
 6. Install the unzip tool for Ubuntu
 ```

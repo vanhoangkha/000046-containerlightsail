@@ -12,21 +12,21 @@
     <title>Chuẩn bị :: AMAZON LIGHTSAIL CONTAINER - CHẠY ỨNG DỤNG TRÊN LIGHTSAIL CONTAINER</title>
 
     
-    <link href="/css/nucleus.css?1680808306" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1680808306" rel="stylesheet">
-    <link href="/css/hybrid.css?1680808306" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1680808306" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1680808306" rel="stylesheet">
-    <link href="/css/auto-complete.css?1680808306" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1680808306" rel="stylesheet">
-    <link href="/css/theme.css?1680808306" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1680808306" rel="stylesheet">
+    <link href="/css/nucleus.css?1699396900" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1699396900" rel="stylesheet">
+    <link href="/css/hybrid.css?1699396900" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1699396900" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1699396900" rel="stylesheet">
+    <link href="/css/auto-complete.css?1699396900" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1699396900" rel="stylesheet">
+    <link href="/css/theme.css?1699396900" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1699396900" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1680808306" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1699396900" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1680808306"></script>
+    <script src="/js/jquery-3.3.1.min.js?1699396900"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1680808306"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1680808306"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1699396900"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1699396900"></script>
 <script type="text/javascript">
     
         var baseurl = "\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1680808306"></script>
+<script type="text/javascript" src="/js/search.js?1699396900"></script>
 
     
   </div>
@@ -108,13 +108,13 @@
  
   
     
-    <li data-nav-id="/vi/2-create-containerservice/" title="Tạo container service" class="dd-item 
+    <li data-nav-id="/vi/2-create-containerservice/" title="Tạo Container Service" class="dd-item 
         
         
         
         ">
       <a href="/vi/2-create-containerservice/">
-          <b>2. </b>Tạo container service
+          <b>2. </b>Tạo Container Service
           
             <i class="fas fa-check read-icon"></i>
           
@@ -219,13 +219,13 @@
  
   
     
-    <li data-nav-id="/vi/4-deploy-yourimage/4.2-configure-awscli/" title="Cấu hình AWS CLI" class="dd-item 
+    <li data-nav-id="/vi/4-deploy-yourimage/4.2-configure-awscli/" title="Hướng Dẫn Cấu Hình AWS CLI" class="dd-item 
         
         
         
         ">
       <a href="/vi/4-deploy-yourimage/4.2-configure-awscli/">
-          <b>4.2 </b>Cấu hình AWS CLI
+          <b>4.2 </b>Hướng Dẫn Cấu Hình AWS CLI
           
             <i class="fas fa-check read-icon"></i>
           
@@ -475,7 +475,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>07-04-2023</font></i>
+        <i><font color=orange>08-11-2023</font></i>
     </left>
     <left>
         <br>
@@ -537,7 +537,7 @@
   <ul>
     <li>
       <ul>
-        <li></li>
+        <li><a href="#chuẩn-bị">Chuẩn bị</a></li>
       </ul>
     </li>
   </ul>
@@ -565,21 +565,39 @@
 
 
 
-	<h4 id="chuẩn-bị">Chuẩn bị</h4>
-<p>Trước khi bắt đầu với bài lab này hãy đảm bảo rằng bạn đã nắm các khái niệm cơ bản để sẵn sàng cho bài lab.</p>
-<p><strong>Giao diện dòng lệnh AWS (CLI)</strong>
-Giao diện dòng lệnh AWS (CLI) là một công cụ hợp nhất để quản lý các dịch vụ AWS của bạn từ dòng lệnh và trong các tập lệnh. Trong bài lab này, bạn sẽ sử dụng AWS CLI để tương tác với các dịch vụ và triển khai vùng chứa Amazon Lightsail của mình. Để cài đặt AWS CLI, hãy làm theo hướng dẫn tại đây:</p>
+	<h3 id="chuẩn-bị">Chuẩn bị</h3>
+<p>Trước khi bắt đầu với bài lab này, hãy đảm bảo rằng bạn đã nắm được các khái niệm cơ bản để chuẩn bị sẵn sàng cho bài lab.</p>
+<p><strong>Giao diện dòng lệnh AWS (CLI)</strong><br>
+Giao diện dòng lệnh AWS (CLI) là một công cụ hợp nhất giúp bạn quản lý các dịch vụ AWS qua dòng lệnh và trong các script. Trong bài lab này, bạn sẽ sử dụng AWS CLI để tương tác với các dịch vụ và triển khai vùng chứa Amazon Lightsail. Hãy cài đặt AWS CLI bằng cách làm theo các hướng dẫn sau:</p>
 <ul>
 <li><a href="https://000011.awsstudygroup.com/vi/1-cli-installation/">Cài đặt AWS CLI</a></li>
 <li><a href="https://000011.awsstudygroup.com/vi/2-basic-setup/">Thiết lập CLI cơ bản</a></li>
 </ul>
-<p><strong>AWS Identity and Access Management - IAM</strong>
-IAM là một công cụ trong AWS cho phép bạn kiểm soát truy cập tới các tài nguyển AWS của bạn một cách an toàn. Bạn có thể sử IAM để kiểm soát công tác xác thực (authentication) trong quá trình đăng nhập và công tác ủy quyền (authorization) trong quá trình sử dụng tài nguyên.</p>
+<p><strong>AWS Identity and Access Management (IAM)</strong><br>
+IAM là một dịch vụ trong AWS giúp bạn kiểm soát truy cập vào tài nguyên AWS một cách an toàn. Bạn có thể sử dụng IAM để quản lý việc xác thực và ủy quyền khi sử dụng tài nguyên AWS.</p>
 <ul>
 <li><a href="https://000002.awsstudygroup.com/vi/">Quản trị quyền truy cập với IAM</a></li>
 </ul>
-<p><strong>Docker</strong>
-Nền tảng Docker cho phép bạn phát triển và chạy các ứng dụng vùng chứa. Trong bài lab này, bạn sẽ sử dụng Docker để xây dựng và quản lý container image. Những container image này sẽ được triển khai cho các dịch vụ  Amazon Lightsail của bạn.</p>
+<p><strong>Docker</strong><br>
+Docker cung cấp nền tảng cho phép bạn phát triển và chạy ứng dụng trong môi trường container. Trong bài lab này, bạn sẽ sử dụng Docker để xây dựng và quản lý các container image, sau đó triển khai chúng trên Amazon Lightsail.</p>
+<h4 id="tổng-quan-về-dịch-vụ-container-aws-lightsail">Tổng quan về Dịch vụ Container AWS Lightsail</h4>
+<p>AWS Lightsail cung cấp tài nguyên máy tính để triển khai hình ảnh Docker, sau đó được tự động chạy trên cơ sở hạ tầng của AWS.</p>
+<p>Nguồn: <a href="https://lightsail.aws.amazon.com/ls/docs/en_us/articles/amazon-lightsail-containers">Dịch vụ container trong Amazon Lightsail</a></p>
+<h4 id="tạo-và-quản-lý-các-bản-triển-khai">Tạo và Quản lý Các Bản Triển khai</h4>
+<p>Hướng dẫn cụ thể về cách tạo và quản lý các bản triển khai cho dịch vụ container Lightsail.</p>
+<p>Nguồn: <a href="https://lightsail.aws.amazon.com/ls/docs/en_us/articles/amazon-lightsail-creating-and-managing-deployments">Tạo và quản lý các bản triển khai cho dịch vụ container Amazon Lightsail</a></p>
+<h4 id="tạo-dịch-vụ-container">Tạo Dịch vụ Container</h4>
+<p>Các bước chi tiết để tạo một dịch vụ container Lightsail, bao gồm việc chọn một khu vực AWS thông qua bảng điều khiển Lightsail.</p>
+<p>Nguồn: <a href="https://lightsail.aws.amazon.com/ls/docs/en_us/articles/amazon-lightsail-creating-container-services">Tạo dịch vụ container Amazon Lightsail</a></p>
+<h4 id="dung-lượng-dịch-vụ-container">Dung lượng Dịch vụ Container</h4>
+<p>Thông tin về việc chọn dung lượng cho một dịch vụ container, ảnh hưởng đến quy mô và sức mạnh của nó.</p>
+<p>Nguồn: <a href="https://docs.aws.amazon.com/lightsail/">Tạo một dịch vụ container Lightsail - Amazon Lightsail</a></p>
+<h4 id="quản-lý-hình-ảnh-container">Quản lý Hình ảnh Container</h4>
+<p>Hướng dẫn về việc đẩy và quản lý hình ảnh container trong dịch vụ container Lightsail.</p>
+<p>Nguồn: <a href="https://lightsail.aws.amazon.com/ls/docs/en_us/articles/amazon-lightsail-pushing-and-managing-container-images">Đẩy và quản lý hình ảnh container trên Amazon Lightsail</a></p>
+<h4 id="tạo-hình-ảnh-container">Tạo Hình ảnh Container</h4>
+<p>Các bước về cách tạo hình ảnh container cho Lightsail, bao gồm chạy một hình ảnh container mới và xây dựng một Dockerfile.</p>
+<p>Nguồn: <a href="https://lightsail.aws.amazon.com/ls/docs/en_us/articles/amazon-lightsail-creating-container-images">Tạo hình ảnh container cho dịch vụ container Amazon Lightsail</a></p>
 
 
 
@@ -809,7 +827,7 @@ Nền tảng Docker cho phép bạn phát triển và chạy các ứng dụng v
 			<a class="nav nav-prev" href="/vi/" title="Amazon Lightsail Container"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/vi/2-create-containerservice/" title="Tạo container service" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/vi/2-create-containerservice/" title="Tạo Container Service" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -819,19 +837,19 @@ Nền tảng Docker cho phép bạn phát triển và chạy các ứng dụng v
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1680808306"></script>
-    <script src="/js/perfect-scrollbar.min.js?1680808306"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1680808306"></script>
-    <script src="/js/jquery.sticky.js?1680808306"></script>
-    <script src="/js/featherlight.min.js?1680808306"></script>
-    <script src="/js/highlight.pack.js?1680808306"></script>
+    <script src="/js/clipboard.min.js?1699396900"></script>
+    <script src="/js/perfect-scrollbar.min.js?1699396900"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1699396900"></script>
+    <script src="/js/jquery.sticky.js?1699396900"></script>
+    <script src="/js/featherlight.min.js?1699396900"></script>
+    <script src="/js/highlight.pack.js?1699396900"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1680808306"></script>
-    <script src="/js/learn.js?1680808306"></script>
-    <script src="/js/hugo-learn.js?1680808306"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1699396900"></script>
+    <script src="/js/learn.js?1699396900"></script>
+    <script src="/js/hugo-learn.js?1699396900"></script>
 
-    <link href="/mermaid/mermaid.css?1680808306" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1680808306"></script>
+    <link href="/mermaid/mermaid.css?1699396900" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1699396900"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

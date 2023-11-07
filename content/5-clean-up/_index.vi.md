@@ -20,9 +20,7 @@ Chúng ta sẽ tiến hành xóa các tài nguyên theo thứ tự sau
 2. Truy cập vào [giao diện quản trị của Lightsail](https://lightsail.aws.amazon.com/ls/webapp/home/instances/) 
   + Click vào biểu tượng 3 dấu chấm của instance **Build-Instance**.
   + Click **Delete**.
-  ![Lightsail](/images/container/040.png?width=90pc)
   + Click **Yes, delete**.
-
 
 3.  Truy cập vào [giao diện quản trị của dịch vụ IAM](https://console.aws.amazon.com/iamv2/home#/users)
   + Tại mục search , điền **aws-cli**.

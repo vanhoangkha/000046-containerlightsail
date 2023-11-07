@@ -1,44 +1,79 @@
 +++
-title = "Install Docker for Ubuntu"
-date = 2021
+title = "Installing Docker on Ubuntu for AWS Lightsail"
+date = "2021-01-01"
 weight = 3
 chapter = false
 pre = "<b>4.3 </b>"
 +++
 
-In this step, we will proceed to install Docker for our Lightsail Instance to build the container image.
-You can refer to the installation process [here](https://docs.docker.com/engine/install/ubuntu/)
+In this guide, we'll walk through the process of installing Docker on our AWS Lightsail instance. This is an essential step for building and managing container images. For additional details, you can refer to the Docker's official installation [guide for Ubuntu](https://docs.docker.com/engine/install/ubuntu/).
 
-1. Run the following command to install the necessary packages and add the GPG ( GNU Privacy Guard ) key to be able to use the Docker repository.
-```
-sudo apt-get install apt-transport-https ca-certificates curl gnupg lsb-release
-sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
-```
-![Lightsail](/images/3/00018.png?featherlight=false&width=90pc)
+## Installing Docker
 
-2. Run below command to add Docker Repo.
-```
-echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-```
+The Docker package available in the default Ubuntu repository might not be the latest version. To ensure we install the most up-to-date version, we'll set up Docker's official repository and install from there. This process includes adding a new package source, the GPG key from Docker to verify the integrity of the packages, and then the installation of the Docker package itself.
 
-![Lightsail](/images/3/00019.png?featherlight=false&width=90pc)
+1. Update Package List
 
-3. Install Docker from Repo by running the command below
+Begin by updating the list of packages:
+
 ```
-sudo apt-get update
-sudo apt-get install docker-ce docker-ce-cli containerd.io -y
+sudo apt update
 ```
 
-![Lightsail](/images/3/00020.png?featherlight=false&width=90pc)
- 
-4. Check the Docker installation with the command below.
+2. nstall Prerequisites
+Next, we'll install prerequisite packages that will let apt use repositories over HTTPS:
+
+```
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+```
+
+3.  Add Docker’s Official GPG Key
+Now, add the official Docker GPG key to your system:
+
+```
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+```
+
+4. Add the Docker Repository
+Add the Docker repository to APT sources:
+
+```
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+```
+
+5. Check Docker Versions
+Before installing, you can check the versions of Docker available:
+
+```
+apt-cache policy docker-ce
+```
+
+6. Install Docker
+Now we can install Docker:
+
+```
+sudo apt install docker-ce
+```
+
+7. Verify Docker Service
+After the installation, ensure that the Docker service is running:
+
+```
+sudo systemctl status docker
+
+```
+
+8. Test Docker Installation
+Verify that Docker was installed successfully by running the Hello World image:
+
 ```
 sudo docker run hello-world
 ```
 
 ![Lightsail](/images/3/00021.png?featherlight=false&width=90pc)
 
-5. The next step we will proceed to build the container image to deploy.
+9. Next Steps
+With Docker installed, the next step is to build the container image for our application deployment.
 
 
 ![Lightsail](/images/3/00022.png?featherlight=false&width=90pc)

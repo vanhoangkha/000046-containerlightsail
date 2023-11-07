@@ -12,21 +12,21 @@
     <title>Preparation :: AMAZON LIGHTSAIL CONTAINER - RUN APPS ON LIGHTSAIL CONTAINER</title>
 
     
-    <link href="/css/nucleus.css?1680808306" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1680808306" rel="stylesheet">
-    <link href="/css/hybrid.css?1680808306" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1680808306" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1680808306" rel="stylesheet">
-    <link href="/css/auto-complete.css?1680808306" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1680808306" rel="stylesheet">
-    <link href="/css/theme.css?1680808306" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1680808306" rel="stylesheet">
+    <link href="/css/nucleus.css?1699396900" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1699396900" rel="stylesheet">
+    <link href="/css/hybrid.css?1699396900" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1699396900" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1699396900" rel="stylesheet">
+    <link href="/css/auto-complete.css?1699396900" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1699396900" rel="stylesheet">
+    <link href="/css/theme.css?1699396900" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1699396900" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1680808306" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1699396900" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1680808306"></script>
+    <script src="/js/jquery-3.3.1.min.js?1699396900"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1680808306"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1680808306"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1699396900"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1699396900"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1680808306"></script>
+<script type="text/javascript" src="/js/search.js?1699396900"></script>
 
     
   </div>
@@ -108,13 +108,13 @@
  
   
     
-    <li data-nav-id="/2-create-containerservice/" title="Create container service" class="dd-item 
+    <li data-nav-id="/2-create-containerservice/" title="Creating a Container Service on AWS" class="dd-item 
         
         
         
         ">
       <a href="/2-create-containerservice/">
-          <b>2. </b>Create container service
+          <b>2. </b>Creating a Container Service on AWS
           
             <i class="fas fa-check read-icon"></i>
           
@@ -134,13 +134,13 @@
  
   
     
-    <li data-nav-id="/3-deploy-publicimage/" title="Deploy public image" class="dd-item 
+    <li data-nav-id="/3-deploy-publicimage/" title="Deploying a Public Image" class="dd-item 
         
         
         
         ">
       <a href="/3-deploy-publicimage/">
-          <b>3. </b>Deploy public image
+          <b>3. </b>Deploying a Public Image
           
             <i class="fas fa-check read-icon"></i>
           
@@ -191,13 +191,13 @@
  
   
     
-    <li data-nav-id="/4-deploy-yourimage/4.1-create-lightsailinstance/" title="Create Lightsail instance" class="dd-item 
+    <li data-nav-id="/4-deploy-yourimage/4.1-create-lightsailinstance/" title="Creating a Lightsail Instance" class="dd-item 
         
         
         
         ">
       <a href="/4-deploy-yourimage/4.1-create-lightsailinstance/">
-          <b>4.1 </b>Create Lightsail instance
+          <b>4.1 </b>Creating a Lightsail Instance
           
             <i class="fas fa-check read-icon"></i>
           
@@ -219,13 +219,13 @@
  
   
     
-    <li data-nav-id="/4-deploy-yourimage/4.2-configure-awscli/" title="AWS CLI Configuration" class="dd-item 
+    <li data-nav-id="/4-deploy-yourimage/4.2-configure-awscli/" title="AWS CLI Configuration Guide" class="dd-item 
         
         
         
         ">
       <a href="/4-deploy-yourimage/4.2-configure-awscli/">
-          <b>4.2 </b>AWS CLI Configuration
+          <b>4.2 </b>AWS CLI Configuration Guide
           
             <i class="fas fa-check read-icon"></i>
           
@@ -247,13 +247,13 @@
  
   
     
-    <li data-nav-id="/4-deploy-yourimage/4.3-install-docker/" title="Install Docker for Ubuntu" class="dd-item 
+    <li data-nav-id="/4-deploy-yourimage/4.3-install-docker/" title="Installing Docker on Ubuntu for AWS Lightsail" class="dd-item 
         
         
         
         ">
       <a href="/4-deploy-yourimage/4.3-install-docker/">
-          <b>4.3 </b>Install Docker for Ubuntu
+          <b>4.3 </b>Installing Docker on Ubuntu for AWS Lightsail
           
             <i class="fas fa-check read-icon"></i>
           
@@ -475,7 +475,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>07-04-2023</font></i>
+        <i><font color=orange>08-11-2023</font></i>
     </left>
     <left>
         <br>
@@ -540,6 +540,7 @@
         <li></li>
       </ul>
     </li>
+    <li><a href="#creating-container-images">Creating Container Images</a></li>
   </ul>
 </nav>
     </div>
@@ -565,21 +566,52 @@
 
 
 
-	<h4 id="prepare">Prepare</h4>
-<p>Before you start with this lab make sure you have the basics down to get ready for the lab.
-<strong>AWS Command Line Interface (CLI)</strong>
-The AWS Command Line Interface (CLI) is a unified tool for managing your AWS services from the command line and in scripts. In this lab, you&rsquo;ll use the AWS CLI to interact with your Amazon Lightsail container deployments and services. To install the AWS CLI, follow the instructions here:</p>
+	<h4 id="preparation">Preparation</h4>
+<p>Before diving into this lab, ensure you are familiar with the basic concepts necessary to be lab-ready.</p>
+<p><strong>AWS Command Line Interface (CLI)</strong><br>
+The AWS Command Line Interface (CLI) is a unified tool that enables you to manage AWS services through the command line and scripts. In this lab, you&rsquo;ll be using the AWS CLI to interact with services and deploy an Amazon Lightsail container. Install the AWS CLI by following these instructions:</p>
 <ul>
-<li><a href="https://000011.awsstudygroup.com/en/1-cli-installation/">Install AWS CLI</a></li>
-<li><a href="https://000011.awsstudygroup.com/en/2-basic-setup/">Basic CLI Setup</a></li>
+<li><a href="https://aws.amazon.com/cli/">Install AWS CLI</a></li>
+<li><a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html">Basic CLI Setup</a></li>
 </ul>
-<p><strong>AWS Identity and Access Management - IAM</strong>
-IAM is a tool in AWS that allows you to securely control access to your AWS resources. You can use IAM to control authentication during login and authorization during resource usage.</p>
+<p><strong>AWS Identity and Access Management (IAM)</strong><br>
+IAM is a service within AWS that helps you securely control access to AWS resources. With IAM, you can manage authentication and authorization for the use of AWS resources.</p>
 <ul>
-<li><a href="https://000002.awsstudygroup.com/en/">Manage access with IAM</a></li>
+<li><a href="https://aws.amazon.com/iam/">Access Management with IAM</a></li>
 </ul>
-<p><strong>Docker</strong>
-The Docker platform allows you to develop and run container applications. In this lab, you will use Docker to build and manage container images. These container images will be deployed to your Amazon Lightsail services.</p>
+<p><strong>Docker</strong><br>
+Docker provides a platform to develop and run applications within containerized environments. In this lab, you will utilize Docker to build and manage container images, then deploy them on Amazon Lightsail.</p>
+<h4 id="aws-lightsail-container-documentation-summary">AWS Lightsail Container Documentation Summary</h4>
+<h4 id="overview-of-container-services">Overview of Container Services</h4>
+<ul>
+<li><strong>Description</strong>: AWS Lightsail containers provide compute resources to deploy Docker images, which are then automatically run on the AWS infrastructure.</li>
+<li><strong>Source</strong>: <a href="https://lightsail.aws.amazon.com/ls/docs/en_us/articles/amazon-lightsail-containers">Container services in Amazon Lightsail</a></li>
+</ul>
+<h4 id="creating-and-managing-deployments">Creating and Managing Deployments</h4>
+<ul>
+<li><strong>Guide</strong>: Instructions on creating and managing deployments for Lightsail container services.</li>
+<li><strong>Source</strong>: <a href="https://lightsail.aws.amazon.com/ls/docs/en_us/articles/amazon-lightsail-creating-and-managing-deployments">Creating and managing deployments for Amazon Lightsail container services</a></li>
+</ul>
+<h4 id="creating-container-services">Creating Container Services</h4>
+<ul>
+<li><strong>Steps</strong>: Detailed steps for creating a Lightsail container service, including selecting an AWS region through the Lightsail console.</li>
+<li><strong>Source</strong>: <a href="https://lightsail.aws.amazon.com/ls/docs/en_us/articles/amazon-lightsail-creating-container-services">Creating Amazon Lightsail container services</a></li>
+</ul>
+<h4 id="container-service-capacity">Container Service Capacity</h4>
+<ul>
+<li><strong>Configuration</strong>: Information on choosing the capacity for a container service, affecting its scale and power.</li>
+<li><strong>Source</strong>: <a href="https://docs.aws.amazon.com/lightsail/">Create a Lightsail container service - Amazon Lightsail</a></li>
+</ul>
+<h4 id="managing-container-images">Managing Container Images</h4>
+<ul>
+<li><strong>Management</strong>: Guidance on pushing and managing container images in Lightsail container services.</li>
+<li><strong>Source</strong>: <a href="https://lightsail.aws.amazon.com/ls/docs/en_us/articles/amazon-lightsail-pushing-and-managing-container-images">Pushing and managing container images on Amazon Lightsail</a></li>
+</ul>
+<h2 id="creating-container-images">Creating Container Images</h2>
+<ul>
+<li><strong>Creation</strong>: Steps on creating container images for Lightsail, including running a new container image and building a Dockerfile.</li>
+<li><strong>Source</strong>: <a href="https://lightsail.aws.amazon.com/ls/docs/en_us/articles/amazon-lightsail-creating-container-images">Creating container images for Amazon Lightsail container services</a></li>
+</ul>
 
 
 
@@ -809,7 +841,7 @@ The Docker platform allows you to develop and run container applications. In thi
 			<a class="nav nav-prev" href="/" title="Amazon Lightsail Container"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/2-create-containerservice/" title="Create container service" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/2-create-containerservice/" title="Creating a Container Service on AWS" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -819,19 +851,19 @@ The Docker platform allows you to develop and run container applications. In thi
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1680808306"></script>
-    <script src="/js/perfect-scrollbar.min.js?1680808306"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1680808306"></script>
-    <script src="/js/jquery.sticky.js?1680808306"></script>
-    <script src="/js/featherlight.min.js?1680808306"></script>
-    <script src="/js/highlight.pack.js?1680808306"></script>
+    <script src="/js/clipboard.min.js?1699396900"></script>
+    <script src="/js/perfect-scrollbar.min.js?1699396900"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1699396900"></script>
+    <script src="/js/jquery.sticky.js?1699396900"></script>
+    <script src="/js/featherlight.min.js?1699396900"></script>
+    <script src="/js/highlight.pack.js?1699396900"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1680808306"></script>
-    <script src="/js/learn.js?1680808306"></script>
-    <script src="/js/hugo-learn.js?1680808306"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1699396900"></script>
+    <script src="/js/learn.js?1699396900"></script>
+    <script src="/js/hugo-learn.js?1699396900"></script>
 
-    <link href="/mermaid/mermaid.css?1680808306" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1680808306"></script>
+    <link href="/mermaid/mermaid.css?1699396900" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1699396900"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

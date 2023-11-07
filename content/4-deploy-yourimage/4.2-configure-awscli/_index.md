@@ -1,44 +1,36 @@
-+++
-title = "AWS CLI Configuration"
-date = 2021
-weight = 2
-chapter = false
-pre = "<b>4.2 </b>"
-+++
+---
+title: "AWS CLI Configuration Guide"
+date: 2021-01-01
+weight: 2
+chapter: false
+pre: "<b>4.2 </b>"
+---
 
-In this step, we will generate an IAM user access key and secret access key to use in configuration for the AWS CLI.
+#### Initial Configuration of AWS CLI
 
-1. From [IAM service interface](https://console.aws.amazon.com/iam/home#/home) click **Users**.
+Amazon Web Services (AWS) is a versatile and powerful cloud services platform. To manage AWS services efficiently via the Command Line Interface (CLI), you need to set up the AWS CLI by creating access keys for an IAM User. Here is a step-by-step guide to facilitate this process for you.
 
-![Lightsail](/images/3/00010.png?featherlight=false&width=90pc)
+**Step 1:** Log in to the AWS Management Console
+- Access the AWS Management Console at the following link: [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/).
 
-1. Click **Add users*
+**Step 2:** Select an IAM User
+- In the IAM console, go to "Users" in the navigation pane and click on the username for whom you want to create an access key.
 
-![Lightsail](/images/3/00011.png?featherlight=false&width=90pc)
+**Step 3:** Create an Access Key
+- On the user's details page, navigate to the "Security credentials" tab and, within the "Access keys" section, click "Create access key".
 
-2. Name the user **aws-cli**.
-  + Click **Programmatic access**, our user only uses it for AWS CLI, so there is no need to log in to the management console.
-  + Click **Next: Permissions**.
+**Step 4:** Configure the Access Key in the CLI
+- During the configuration process, select "Command Line Interface (CLI)".
 
-![Lightsail](/images/3/00012.png?featherlight=false&width=90pc)
+**Step 5:** Enter Tags (if necessary)
+- You may enter tags for the access key if desired, then click "Next".
 
-3. Click **Attach existing policies directly**.
-  + Click on **Administrator Access**.
-  + Click **Next: Tags**.
+**Step 6:** Download the .csv File
+- Click on "Download .csv file" to download a file containing the access key ID and secret access key.
 
-![Lightsail](/images/3/00013.png?featherlight=false&width=90pc)
+**Step 7:** Complete Key Creation
+- After the .csv file has been downloaded, click "Done" to finish.
 
-4. Click **Next: Review**. then click **Create User**.
+**Important Note:** An access key is sensitive data and should be kept secure. Store the .csv file carefully and do not share it with untrusted individuals.
 
-5. Click **Download .csv** to download the csv file containing access information and secret access key.
-
-![Lightsail](/images/3/00014.png?featherlight=false&width=90pc)
-
-6. Back on our Build Instance run **sudo aws configure** command to proceed with CLI configuration.
-  + Configure Region and format information as shown below. Note to use the access key and secret access key from the csv file you downloaded.
-
-![Lightsail](/images/3/00015.png?featherlight=false&width=90pc)
-
-7. The next step is to install Docker to start building the image.
-
-![Lightsail](/images/3/00016.png?featherlight=false&width=90pc)
+Following these steps makes creating and configuring the AWS CLI simple, enabling flexible management of AWS resources via the CLI.

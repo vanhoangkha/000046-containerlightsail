@@ -20,7 +20,6 @@ We will proceed to delete the resources in the following order
 2. Go to [Lightsail's admin interface](https://lightsail.aws.amazon.com/ls/webapp/home/instances/)
   + Click on the 3-dot icon of the **Build-Instance** instance.
   + Click **Delete**.
-  ![Lightsail](/images/container/40.png?width=90pc)
   + Click **Yes, delete**.
 
 

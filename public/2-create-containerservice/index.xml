@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Create container service on AMAZON LIGHTSAIL CONTAINER - RUN APPS ON LIGHTSAIL CONTAINER</title>
+    <title>Creating a Container Service on AWS on AMAZON LIGHTSAIL CONTAINER - RUN APPS ON LIGHTSAIL CONTAINER</title>
     <link>/2-create-containerservice/</link>
-    <description>Recent content in Create container service on AMAZON LIGHTSAIL CONTAINER - RUN APPS ON LIGHTSAIL CONTAINER</description>
+    <description>Recent content in Creating a Container Service on AWS on AMAZON LIGHTSAIL CONTAINER - RUN APPS ON LIGHTSAIL CONTAINER</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 01 Jan 1970 07:33:41 +0700</lastBuildDate><atom:link href="/2-create-containerservice/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/2-create-containerservice/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
