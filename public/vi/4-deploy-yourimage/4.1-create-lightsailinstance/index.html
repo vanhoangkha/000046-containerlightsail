@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.99.1" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Tạo Lightsail instance :: AMAZON LIGHTSAIL CONTAINER - CHẠY ỨNG DỤNG TRÊN LIGHTSAIL CONTAINER</title>
 
     
-    <link href="/css/nucleus.css?1701074009" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1701074009" rel="stylesheet">
-    <link href="/css/hybrid.css?1701074009" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1701074009" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1701074009" rel="stylesheet">
-    <link href="/css/auto-complete.css?1701074009" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1701074009" rel="stylesheet">
-    <link href="/css/theme.css?1701074009" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1701074009" rel="stylesheet">
+    <link href="/css/nucleus.css?1733802071" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733802071" rel="stylesheet">
+    <link href="/css/hybrid.css?1733802071" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733802071" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733802071" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733802071" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733802071" rel="stylesheet">
+    <link href="/css/theme.css?1733802071" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733802071" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1701074009" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733802071" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1701074009"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733802071"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1701074009"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1701074009"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733802071"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733802071"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/vi";
+        var baseurl = "\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1701074009"></script>
+<script type="text/javascript" src="/js/search.js?1733802071"></script>
 
     
   </div>
@@ -192,7 +192,7 @@
   
     
     <li data-nav-id="/vi/4-deploy-yourimage/4.1-create-lightsailinstance/" title="Tạo Lightsail instance" class="dd-item 
-        parent
+        
         active
         
         ">
@@ -475,7 +475,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>27-11-2023</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -576,51 +576,51 @@
 <ol>
 <li>
 <p>Từ <a href="https://lightsail.aws.amazon.com/ls/webapp/home/">giao diện quản trị của Lightsail</a>, click vào <strong>Create Instance</strong>.</p>
-<p><img src="/images/3/0001.png?featherlight=false&amp;width=90pc" alt="Lightsail"></p>
+<p><img alt="Lightsail" src="/images/3/0001.png?featherlight=false&width=90pc"></p>
 </li>
 <li>
 <p>Chọn nền tảng <strong>Linux/Unix</strong>. Trong phần Blueprint, click vào <strong>OS Only</strong>, sau đó chọn <strong>Ubuntu Linux 20.04 LTS</strong>.</p>
-<p><img src="/images/3/0002.png?featherlight=false&amp;width=90pc" alt="Lightsail"></p>
+<p><img alt="Lightsail" src="/images/3/0002.png?featherlight=false&width=90pc"></p>
 </li>
 <li>
 <p>Kéo màn hình xuống phía dưới, ở phần <strong>Identify your instance</strong>, đặt tên instance là <strong>Build-Instance</strong>.</p>
-<p><img src="/images/3/0003.png?featherlight=false&amp;width=90pc" alt="Lightsail"></p>
+<p><img alt="Lightsail" src="/images/3/0003.png?featherlight=false&width=90pc"></p>
 </li>
 <li>
 <p>Tiếp tục kéo xuống phía dưới và click vào <strong>Create Instance</strong>.</p>
-<p><img src="/images/3/0003.png?featherlight=false&amp;width=90pc" alt="Lightsail"></p>
+<p><img alt="Lightsail" src="/images/3/0003.png?featherlight=false&width=90pc"></p>
 </li>
 <li>
 <p>Chờ đợi vài phút để instance chuyển sang trạng thái running như hình dưới đây.</p>
 <ul>
 <li>Click vào biểu tượng dòng lệnh để kết nối với Build-Instance.</li>
 </ul>
-<p><img src="/images/3/0004.png?featherlight=false&amp;width=90pc" alt="Lightsail"></p>
+<p><img alt="Lightsail" src="/images/3/0004.png?featherlight=false&width=90pc"></p>
 </li>
 <li>
 <p>Cài đặt công cụ unzip cho Ubuntu</p>
 </li>
 </ol>
 <pre tabindex="0"><code>sudo apt-get install -y unzip
-</code></pre><p><img src="/images/3/0005.png?featherlight=false&amp;width=90pc" alt="Lightsail"></p>
+</code></pre><p><img alt="Lightsail" src="/images/3/0005.png?featherlight=false&width=90pc"></p>
 <ol start="7">
 <li>Cài đặt AWS CLI trên Build-Instance bằng cách chạy các câu lệnh dưới đây</li>
 </ol>
 <pre tabindex="0"><code>sudo curl &#34;https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip&#34; -o &#34;awscliv2.zip&#34;
 sudo unzip awscliv2.zip
 sudo ./aws/install
-</code></pre><p><img src="/images/3/0006.png?featherlight=false&amp;width=90pc" alt="Lightsail"></p>
+</code></pre><p><img alt="Lightsail" src="/images/3/0006.png?featherlight=false&width=90pc"></p>
 <ol start="8">
 <li>Cài đặt Lightsail control plugin cho AWS CLI bằng cách chạy các câu lệnh dưới đây</li>
 </ol>
 <pre tabindex="0"><code>sudo curl &#34;https://s3.us-west-2.amazonaws.com/lightsailctl/latest/linux-amd64/lightsailctl&#34; -o &#34;/usr/local/bin/lightsailctl&#34;
 sudo chmod +x /usr/local/bin/lightsailctl
-</code></pre><p><img src="/images/3/0007.png?featherlight=false&amp;width=90pc" alt="Lightsail"></p>
+</code></pre><p><img alt="Lightsail" src="/images/3/0007.png?featherlight=false&width=90pc"></p>
 <ol start="9">
 <li>Bước tiếp theo chúng ta sẽ tạo user <strong>awsstudent</strong> có quyền <strong>Administrator Access</strong>, sau đó tạo accesskey / secret accesskey để cấu hình AWS CLI.</li>
 </ol>
-<p><img src="/images/3/0008.png?featherlight=false&amp;width=90pc" alt="Lightsail"></p>
-<p><img src="/images/3/0009.png?featherlight=false&amp;width=90pc" alt="Lightsail"></p>
+<p><img alt="Lightsail" src="/images/3/0008.png?featherlight=false&width=90pc"></p>
+<p><img alt="Lightsail" src="/images/3/0009.png?featherlight=false&width=90pc"></p>
 
 
 
@@ -864,19 +864,19 @@ sudo chmod +x /usr/local/bin/lightsailctl
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1701074009"></script>
-    <script src="/js/perfect-scrollbar.min.js?1701074009"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1701074009"></script>
-    <script src="/js/jquery.sticky.js?1701074009"></script>
-    <script src="/js/featherlight.min.js?1701074009"></script>
-    <script src="/js/highlight.pack.js?1701074009"></script>
+    <script src="/js/clipboard.min.js?1733802071"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733802071"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733802071"></script>
+    <script src="/js/jquery.sticky.js?1733802071"></script>
+    <script src="/js/featherlight.min.js?1733802071"></script>
+    <script src="/js/highlight.pack.js?1733802071"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1701074009"></script>
-    <script src="/js/learn.js?1701074009"></script>
-    <script src="/js/hugo-learn.js?1701074009"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733802071"></script>
+    <script src="/js/learn.js?1733802071"></script>
+    <script src="/js/hugo-learn.js?1733802071"></script>
 
-    <link href="/mermaid/mermaid.css?1701074009" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1701074009"></script>
+    <link href="/mermaid/mermaid.css?1733802071" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733802071"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
