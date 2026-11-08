@@ -1,4 +1,4 @@
-# 📦 Container on Lightsail
+# Container on Lightsail
 
 Run containers on Amazon Lightsail.
 
@@ -8,7 +8,7 @@ This is a hands-on workshop from the **AWS First Cloud Journey** series, designe
 
 ## Workshop
 
-📖 **[Start the workshop](https://vanhoangkha.github.io/000046-containerlightsail/)**
+**[Start the workshop](https://vanhoangkha.github.io/000046-containerlightsail/)**
 
 ## Prerequisites
 
